@@ -1,0 +1,75 @@
+:root {
+  --color-main: #3E7B27;
+  --color-main-light: #85A947;
+  --color-bg-card: #EFE3C2;
+  --color-bg-section: #F9F7EE;
+  --color-text-main: #1a1a1a;
+  --color-text-muted: #777;
+
+  --radius-lg: 28px;
+  --radius-md: 18px;
+  --radius-pill: 999px;
+}
+
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body.page {
+  margin: 0;
+  font-family: Calibri, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  background-color: #ffffff;
+  color: var(--color-text-main);
+  font-size: 18px;
+}
+
+h1, h2, h3 {
+  margin: 0 0 .35em;
+  font-family: "Bebas Neue", Calibri, system-ui, sans-serif;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--color-main);
+}
+
+.page-title {
+  text-align: left;
+  font-size: 2.4rem;
+  margin: .8rem 0 1.2rem;
+}
+
+.accent-text {
+  font-family: "Cuprum", Calibri, system-ui, sans-serif;
+}
+
+p {
+  margin: 0 0 .8em;
+  line-height: 1.5;
+}
+
+a {
+  color: var(--color-main);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}

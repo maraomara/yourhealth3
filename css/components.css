@@ -1,0 +1,364 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: .55rem 1.6rem;
+  border-radius: var(--radius-pill);
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: .98rem;
+  transition: background .15s, color .15s, transform .1s, box-shadow .15s;
+  font-family: Calibri, system-ui, sans-serif;
+  text-decoration: none;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn-primary {
+  background: var(--color-main);
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(62,123,39,.35);
+}
+
+.btn-primary:hover {
+  background: #345f22;
+}
+
+.btn-secondary {
+  background: var(--color-main-light);
+  color: #fff;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--color-main);
+  color: var(--color-main);
+}
+
+.btn-outline:hover {
+  background: var(--color-main);
+  color: #fff;
+}
+
+
+.hero-section {
+  margin-bottom: 1.8rem;
+  padding: 1.2rem 1.3rem 1.3rem;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(
+    135deg,
+    rgba(62,123,39,0.07),
+    rgba(133,169,71,0.15)
+  );
+  text-align: center;
+}
+
+.hero-section h2 {
+  font-size: 2.4rem;
+  color: var(--color-main);
+}
+
+.hero-section p {
+  font-family: "Cuprum", Calibri, system-ui, sans-serif;
+  color: var(--color-main);
+  font-size: 1.1rem;
+}
+
+
+.home-section {
+  margin-bottom: 1.8rem;
+  padding: .9rem 1.1rem 1rem;
+  border-radius: var(--radius-lg);
+  background-color: var(--color-bg-section);
+}
+
+.section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: .7rem;
+}
+
+.section-title-block {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.section-title-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: .5rem 1.6rem;
+  border-radius: var(--radius-pill);
+  background-color: var(--color-main);
+  color: #fff;
+  font-family: "Bebas Neue", Calibri, system-ui, sans-serif;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.section-title-link:hover {
+  background-color: #2e6120;
+  color: #fff;
+}
+
+.cards-row {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+
+.diet-catalog-grid,
+.recipe-catalog-grid,
+.community-catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 18px;
+  padding: .75rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 10px rgba(0,0,0,.06);
+}
+
+.card-link {
+  display: flex;
+  flex-direction: column;
+  color: inherit;
+  text-decoration: none;
+}
+
+.card-image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: .6rem;
+  transition: transform .15s, box-shadow .15s;
+}
+
+.card-title {
+  margin: 0;
+  font-size: 1rem;
+  font-family: "Cuprum", Calibri, system-ui, sans-serif;
+  color: var(--color-main);
+  text-align: center;
+}
+
+.card-link:hover .card-title {
+  text-decoration: underline;
+}
+
+.card-link:hover .card-image {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,.12);
+}
+
+
+.page-contacts .page-title {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-top: .8rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+  max-width: 480px;
+}
+
+.contact-form label {
+  font-weight: 600;
+  font-family: "Cuprum", Calibri, system-ui, sans-serif;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: .7rem 1rem;
+  border-radius: 12px;
+  border: 2px solid #dedede;
+  font-size: 1rem;
+  font-family: Calibri, system-ui, sans-serif;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--color-main);
+  box-shadow: 0 0 4px rgba(62,123,39,.3);
+}
+
+
+.page-profile .page-title {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.profile-hero-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.profile-card {
+  background-color: var(--color-main);
+  border-radius: 32px;
+  padding: 1.4rem 2rem 2.1rem;
+  max-width: 780px;
+  width: 100%;
+  color: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-settings-btn {
+  position: absolute;
+  top: 1rem;
+  left: 1.6rem;
+  border-radius: 999px;
+  background-color: #ffffff;
+  color: var(--color-main);
+}
+
+.profile-settings-btn:hover {
+  background-color: #f3f3f3;
+}
+
+.profile-avatar-wrapper {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  padding: 6px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: .4rem;
+}
+
+.profile-avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-name-pill {
+  margin-top: 1rem;
+  padding: .45rem 1.8rem;
+  border-radius: 999px;
+  background-color: #ffffff;
+  color: var(--color-main);
+  font-family: "Cuprum", Calibri, system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.profile-shortcuts {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.profile-shortcuts-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.profile-shortcut {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  padding: .55rem 1.8rem;
+  border-radius: 999px;
+  background-color: var(--color-main);
+  color: #ffffff;
+  font-family: "Cuprum", Calibri, system-ui, sans-serif;
+  font-weight: 600;
+  font-size: .98rem;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .14);
+  cursor: pointer;
+}
+
+.profile-section {
+  margin-bottom: 1.6rem;
+}
+
+.profile-item-card {
+  background-color: var(--color-bg-section);
+  border-radius: 16px;
+  padding: .9rem 1.1rem;
+  box-shadow: 0 3px 8px rgba(0,0,0,.05);
+}
+
+@media (max-width: 768px) {
+
+  .cards-row,
+  .diet-catalog-grid,
+  .recipe-catalog-grid,
+  .community-catalog-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: .8rem !important;
+  }
+
+  .card-image {
+    aspect-ratio: 1 / 1 !important; 
+  }
+
+  .card {
+    padding: .55rem !important;
+  }
+
+  .card-title {
+    font-size: .85rem !important;
+  }
+
+  .btn {
+    font-size: .8rem;
+    padding: .4rem 1.1rem;
+  }
+
+  .section-title-link {
+    font-size: 1.1rem;
+    padding: .4rem 1.2rem;
+  }
+
+  .profile-card {
+    padding-inline: 1.2rem;
+  }
+
+  .profile-settings-btn {
+    left: 1rem;
+  }
+
+  .profile-shortcuts-list {
+    gap: .9rem;
+  }
+
+  .profile-shortcut {
+    padding-inline: 1.3rem;
+    font-size: .9rem;
+  }
+}
