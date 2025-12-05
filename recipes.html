@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>YourHealth+ – Рецепти</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Шрифти -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cuprum:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Стилі -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page page-recipes">
+<!-- Чексбокс для бургера -->
+<input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+<div class="page-layout">
+  <!-- Хедер -->
+  <header class="site-header">
+    <div class="topbar">
+
+      <label for="nav-toggle" class="burger" aria-label="Відкрити або закрити меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <div class="logo">
+        <a href="index.html" title="Повернутись на головну">
+          <span class="site-name">YourHealth+</span>
+        </a>
+      </div>
+
+      <div class="lang-switch">
+        <a href="#">UA</a> | <a href="#">EN</a>
+      </div>
+
+      <form action="#" method="get" class="search-form" role="search">
+        <label for="search-recipes" class="visually-hidden">Пошук по сайту</label>
+        <input type="search" id="search-recipes" name="q" placeholder="Пошук">
+        <button type="submit" class="btn btn-primary">Пошук</button>
+      </form>
+    </div>
+  </header>
+  <!-- Сайдбар -->
+  <aside class="sidebar">
+    <label for="nav-toggle" class="sidebar-close" aria-label="Закрити меню">&times;</label>
+
+    <div class="profile-box">
+      <div class="sidebar-avatar-wrapper">
+        <img src="images/example_of_avatar.png" alt="Ваш аватар" class="sidebar-avatar">
+      </div>
+      <p class="profile-name">Ваш профіль</p>
+    </div>
+
+    <nav aria-label="Бічна навігація">
+      <ul class="sidebar-nav">
+        <li><a class="sidebar-btn" href="profile.html">Профіль</a></li>
+        <li><a class="sidebar-btn" href="index.html">Головна</a></li>
+        <li><a class="sidebar-btn" href="diets.html">Дієти</a></li>
+        <li><a class="sidebar-btn sidebar-btn--active" href="recipes.html">Рецепти</a></li>
+        <li><a class="sidebar-btn" href="communities.html">Спільноти</a></li>
+        <li><a class="sidebar-btn" href="about.html">Про платформу</a></li>
+        <li><a class="sidebar-btn" href="contacts.html">Контакти</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <label for="nav-toggle" class="sidebar-overlay"></label>
+
+  <main class="site-main">
+    <h1 class="page-title">РЕЦЕПТИ</h1>
+
+    <section class="home-section recipes-section">
+      <div class="section-head">
+        <div class="section-title-block">
+          <span class="section-title-link">Каталог рецептів</span>
+        </div>
+        <button type="button" class="btn btn-outline">Фільтри</button>
+      </div>
+
+      <div class="recipe-catalog-grid" id="recipe-grid">
+
+        <article class="card recipe-card">
+          <a href="#" class="card-link">
+            <img src="images/example_of_picture.png" alt="Рецепт 1" class="card-image">
+            <h3 class="card-title">Назва рецепта 1</h3>
+          </a>
+        </article>
+        <article class="card recipe-card">
+          <a href="#" class="card-link">
+            <img src="images/example_of_picture.png" alt="Рецепт 2" class="card-image">
+            <h3 class="card-title">Назва рецепта 2</h3>
+          </a>
+        </article>
+        <article class="card recipe-card">
+          <a href="#" class="card-link">
+            <img src="images/example_of_picture.png" alt="Рецепт 3" class="card-image">
+            <h3 class="card-title">Назва рецепта 3</h3>
+          </a>
+        </article>
+        <article class="card recipe-card">
+          <a href="#" class="card-link">
+            <img src="images/example_of_picture.png" alt="Рецепт 4" class="card-image">
+            <h3 class="card-title">Назва рецепта 4</h3>
+          </a>
+        </article>
+        <article class="card recipe-card">
+          <a href="#" class="card-link">
+            <img src="images/example_of_picture.png" alt="Рецепт 5" class="card-image">
+            <h3 class="card-title">Назва рецепта 5</h3>
+          </a>
+        </article>
+        <article class="card recipe-card">
+          <a href="#" class="card-link">
+            <img src="images/example_of_picture.png" alt="Рецепт 6" class="card-image">
+            <h3 class="card-title">Назва рецепта 6</h3>
+          </a>
+        </article>
+
+        <article class="card recipe-card">
+          <a href="#" class="card-link">
+            <img src="images/example_of_picture.png" alt="Рецепт 7" class="card-image">
+            <h3 class="card-title">Назва рецепта 7</h3>
+          </a>
+        </article>
+        <article class="card recipe-card">
+          <a href="#" class="card-link">
+            <img src="images/example_of_picture.png" alt="Рецепт 8" class="card-image">
+            <h3 class="card-title">Назва рецепта 8</h3>
+          </a>
+        </article>
+        <article class="card recipe-card">
+          <a href="#" class="card-link">
+            <img src="images/example_of_picture.png" alt="Рецепт 9" class="card-image">
+            <h3 class="card-title">Назва рецепта 9</h3>
+          </a>
+        </article>
+        <article class="card recipe-card">
+          <a href="#" class="card-link">
+            <img src="images/example_of_picture.png" alt="Рецепт 10" class="card-image">
+            <h3 class="card-title">Назва рецепта 10</h3>
+          </a>
+        </article>
+        <article class="card recipe-card">
+          <a href="#" class="card-link">
+            <img src="images/example_of_picture.png" alt="Рецепт 11" class="card-image">
+            <h3 class="card-title">Назва рецепта 11</h3>
+          </a>
+        </article>
+        <article class="card recipe-card">
+          <a href="#" class="card-link">
+            <img src="images/example_of_picture.png" alt="Рецепт 12" class="card-image">
+            <h3 class="card-title">Назва рецепта 12</h3>
+          </a>
+        </article>
+
+      </div>
+    </section>
+  </main>
+  <!-- Футер -->
+  <footer class="site-footer">
+    <p>&copy; 2025 YourHealth+. Всі права захищено.</p>
+    <nav aria-label="Нижня навігація">
+      <a href="about.html">Про проєкт</a> |
+      <a href="contacts.html">Контакти</a>
+    </nav>
+  </footer>
+
+</div>
+
+</body>
+</html>
